@@ -14,6 +14,14 @@ A simple app to help you manage the things you have to do in a day.<br />
 
 [Live Demo Link](https://ice949.github.io/Webpack-Setup/)
 
+## Getting Started
+
+- open terminal and run the following commands
+- Git clone https://github.com/ice949/Todo-List.git
+- cd Todo-List
+- npm run build
+- npm start
+
 
 ## Authors
 
