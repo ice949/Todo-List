@@ -31,10 +31,9 @@ window.addEventListener('load', () => {
 
   const createElement = (element) => {
     const elementDiv = document.createElement('div');
-    elementDiv.classList.add('todo')
+    elementDiv.classList.add('todo');
     const checkBox = document.createElement('input');
     const task = document.createElement('p');
-    // const hr = document.createElement('hr');
 
     elementDiv.classList.add('the-elements');
 

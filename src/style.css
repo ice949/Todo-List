@@ -8,6 +8,7 @@ body {
   height: auto;
   margin: 10% 0 0 20%;
   background-color: #fff;
+
   /* padding: 0 60px; */
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
@@ -65,6 +66,7 @@ body {
   /* border-style: solid; */
   background-color: #ccc;
   padding: 12px;
+
   /* border-width: 1px; */
   text-align: center;
   cursor: pointer;
