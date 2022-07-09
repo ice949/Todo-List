@@ -1,3 +1,75 @@
-#test {
-  color: red;
+body {
+  background-color: rgb(218, 216, 216);
+  padding: 0%;
+}
+
+.menu-section {
+  width: 60%;
+  height: auto;
+  margin: 10% 0 0 20%;
+  background-color: #fff;
+  /* padding: 0 60px; */
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 12px 12px 12px #bbb;
+}
+
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #bbb;
+}
+
+.todo {
+  border-bottom: 1px solid #bbb;
+  padding: 12px;
+}
+
+.arrows {
+  margin: 2%;
+  height: 18px;
+  transition: all 0.2s;
+}
+
+.arrows.active {
+  transform: rotate(180deg);
+}
+
+/* add - bar */
+.the-input-bar {
+  display: flex;
+  background-color: white;
+}
+
+.input-bar {
+  font-style: italic;
+  margin: 0%;
+  width: 99%;
+  height: 60px;
+  border-style: none;
+  font-size: 18px;
+  padding: 5px 20px;
+  border-bottom: 1px solid #bbb;
+}
+
+/* the elements */
+.the-elements {
+  display: flex;
+  flex-direction: row;
+}
+
+/* delete button */
+
+.delete-button {
+  /* border-style: solid; */
+  background-color: #ccc;
+  padding: 12px;
+  /* border-width: 1px; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: aliceblue;
 }
