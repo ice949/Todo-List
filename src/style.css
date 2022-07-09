@@ -8,8 +8,6 @@ body {
   height: auto;
   margin: 10% 0 0 20%;
   background-color: #fff;
-
-  /* padding: 0 60px; */
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 12px 12px 12px #bbb;
@@ -37,7 +35,6 @@ body {
   transform: rotate(180deg);
 }
 
-/* add - bar */
 .the-input-bar {
   display: flex;
   background-color: white;
@@ -55,7 +52,6 @@ body {
   border-bottom: 1px solid #bbb;
 }
 
-/* the elements */
 .the-elements {
   display: flex;
   flex-direction: row;
@@ -69,22 +65,15 @@ body {
   width: 81%;
   border-style: none;
   padding: 15px;
-
-  /* height: 30px; */
 }
 
 .delete-icon {
   width: 8%;
 }
 
-/* delete button */
-
 .delete-button {
-  /* border-style: solid; */
   background-color: #ccc;
   padding: 12px;
-
-  /* border-width: 1px; */
   text-align: center;
   cursor: pointer;
 }
