@@ -12,7 +12,7 @@ A simple app to help you manage the things you have to do in a day.<br />
 
 ## Live Demo
 
-[Live Demo Link](https://ice949.github.io/Webpack-Setup/)
+[Live Demo Link](https://ice949.github.io/Todo-List/)
 
 ## Getting Started
 
