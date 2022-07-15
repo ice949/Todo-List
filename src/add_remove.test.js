@@ -11,20 +11,18 @@ describe('Add, Remove Element Test', () => {
     expect(List).toHaveLength(1);
     expect(JSON.parse(localStorage.getItem('List'))).toHaveLength(1);
   });
-  
 
   test('Add one new item to the list', () => {
-    document.body.innerHTML =
-    `<div class="list-elements">` +
+    document.body.innerHTML = '<div class="list-elements">'
 
-    `</div>`;
-    addElement("Cooking");
+    + '</div>';
+    addElement('Cooking');
     const list = document.querySelectorAll('.list-elements');
     expect(list).toHaveLength(1);
     // expect(list).toHave(`
 
     // `);
-});
+  });
 
   test('check the remove from the localStorage', () => {
     const tasks = [{ description: 'text', completed: false, index: 1 },
@@ -35,13 +33,12 @@ describe('Add, Remove Element Test', () => {
     expect(JSON.parse(localStorage.getItem('List'))).toHaveLength(2);
   });
 
-  test("Test the edit function", () => {
-    let tasks = { description: 'text', completed: false, index: 1 };
+  test('Test the edit function', () => {
+    const tasks = { description: 'text', completed: false, index: 1 };
 
-    const str = 'Item'
-    tasks.description = str
-    editElement(1, str)
-    expect(tasks.description).toBe("Item");
-    });
+    const str = 'Item';
+    tasks.description = str;
+    editElement(1, str);
+    expect(tasks.description).toBe('Item');
   });
-
+});

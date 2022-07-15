@@ -49,7 +49,7 @@ const localStorageGet = () => {
 // add element
 
 const addElement = (value) => {
-  let task = {
+  const task = {
     description: value,
     completed: false,
     index: List.length + 1,
