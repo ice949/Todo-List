@@ -31,6 +31,13 @@ A simple app to help you manage the things you have to do in a day.<br />
 - Twitter: [@justine_imasiku](https://twitter.com/justine_imasiku )
 - LinkedIn: [Justine Imasiku](https://www.linkedin.com/in/justine-imasiku-7a25881a5/)
 
+
+👤 **Davis Nyale**
+
+- GitHub: [@DavyKn](https://github.com/DavyKn)
+- Twitter: [@davykk04](https://twitter.com/davykk04)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/davis-katana-246600159/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
