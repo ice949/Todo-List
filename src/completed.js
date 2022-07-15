@@ -21,8 +21,6 @@ const deleteCompleted = (data) => {
   });
   localStorageTasks(List);
 
-  // ListSection.innerHTML = '';
-  // renderList(List);
   data = tasks;
   return data;
 };

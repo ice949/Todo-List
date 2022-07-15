@@ -19,9 +19,6 @@ describe('Add, Remove Element Test', () => {
     addElement('Cooking');
     const list = document.querySelectorAll('.list-elements');
     expect(list).toHaveLength(1);
-    // expect(list).toHave(`
-
-    // `);
   });
 
   test('check the remove from the localStorage', () => {
