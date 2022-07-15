@@ -28,6 +28,7 @@ theInput.addEventListener('keydown', (evnet) => {
   if (evnet.key === 'Enter') {
     addbutton.click();
   }
+  // renderList()
 });
 
 // delete from the list
@@ -71,5 +72,7 @@ ListSection.addEventListener('click', (e) => {
 const deleteAllButton = document.querySelector('.delete-button');
 
 deleteAllButton.addEventListener('click', () => {
-  deleteCompleted();
+  const List = JSON.parse(localStorage.getItem('List')) || [];
+
+  deleteCompleted(List);
 });

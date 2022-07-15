@@ -1,5 +1,5 @@
 const {
-  addElement, deleteElement, List,
+  addElement, deleteElement, List, editElement,
 } = require('./add_remove.js');
 
 describe('Add, Remove Element Test', () => {
@@ -12,6 +12,15 @@ describe('Add, Remove Element Test', () => {
     expect(JSON.parse(localStorage.getItem('List'))).toHaveLength(1);
   });
 
+  test('Add one new item to the list', () => {
+    document.body.innerHTML = '<div class="list-elements">'
+
+    + '</div>';
+    addElement('Cooking');
+    const list = document.querySelectorAll('.list-elements');
+    expect(list).toHaveLength(1);
+  });
+
   test('check the remove from the localStorage', () => {
     const tasks = [{ description: 'text', completed: false, index: 1 },
       { description: 'two', completed: false, index: 2 },
@@ -19,5 +28,14 @@ describe('Add, Remove Element Test', () => {
     localStorage.setItem('List', JSON.stringify(tasks));
     deleteElement(1);
     expect(JSON.parse(localStorage.getItem('List'))).toHaveLength(2);
+  });
+
+  test('Test the edit function', () => {
+    const tasks = { description: 'text', completed: false, index: 1 };
+
+    const str = 'Item';
+    tasks.description = str;
+    editElement(1, str);
+    expect(tasks.description).toBe('Item');
   });
 });
