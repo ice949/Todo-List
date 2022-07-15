@@ -23,7 +23,7 @@ const deleteCompleted = (data) => {
 
   // ListSection.innerHTML = '';
   // renderList(List);
- data = tasks
+  data = tasks;
   return data;
 };
 
