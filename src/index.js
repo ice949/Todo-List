@@ -1,6 +1,6 @@
 import './style.css';
 import {
-  localStorageGet, addElement, deleteElement, editElement,
+  localStorageGet, addElement, deleteElement, editElement, renderList
 } from './add_remove.js';
 import { editCheckBox, deleteCompleted } from './completed.js';
 
@@ -27,7 +27,8 @@ addbutton.addEventListener('click', () => {
 theInput.addEventListener('keydown', (evnet) => {
   if (evnet.key === 'Enter') {
     addbutton.click();
-  }
+  };
+  // renderList()
 });
 
 // delete from the list
@@ -51,6 +52,7 @@ ListSection.addEventListener('click', (event) => {
 });
 
 ListSection.addEventListener('keydown', (event) => {
+  
   if (event.target.classList.contains('task-layout')) {
     const iD = parseInt(event.target.parentElement.getAttribute('div_id'), 10);
     const { value } = event.target;
@@ -71,5 +73,7 @@ ListSection.addEventListener('click', (e) => {
 const deleteAllButton = document.querySelector('.delete-button');
 
 deleteAllButton.addEventListener('click', () => {
-  deleteCompleted();
+  let List = JSON.parse(localStorage.getItem('List')) || [];
+
+  deleteCompleted(List);
 });

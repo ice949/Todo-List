@@ -1,6 +1,6 @@
-import {
+const {
   localStorageTasks, renderList,
-} from './add_remove.js';
+} = require('./add_remove.js');
 
 let List = JSON.parse(localStorage.getItem('List')) || [];
 
@@ -13,8 +13,8 @@ const editCheckBox = (ID, event) => {
   });
 };
 
-const deleteCompleted = () => {
-  List = List.filter((element) => element.completed === false);
+const deleteCompleted = (data) => {
+  const tasks = data.filter((element) => element.completed === false);
   const ListSection = document.querySelector('.list-elements');
 
   List.forEach((element, index) => {
@@ -22,10 +22,12 @@ const deleteCompleted = () => {
   });
   localStorageTasks(List);
 
-  ListSection.innerHTML = '';
-  renderList(List);
+  // ListSection.innerHTML = '';
+  // renderList(List);
+  
+  return data = tasks;
 };
 
-export {
+module.exports = {
   editCheckBox, deleteCompleted,
 };
