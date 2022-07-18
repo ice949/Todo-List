@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## **TODO LIST**
+This is an app developed in the microverse course, developing a task list, using Javascript modules and webpack
 A simple app to help you manage the things you have to do in a day.<br />
 
 ## Built With
